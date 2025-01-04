@@ -32,7 +32,7 @@ export default function Home() {
                             Know your risk, know your response. Diabetes Care.
                         </p>
 
-                        <Link className="btn btn-primary" href="/skirining">
+                        <Link className="btn btn-primary" href="/skrining">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -68,131 +68,67 @@ export default function Home() {
                             gula darah.
                         </p>
 
-                        <div className="flex flex-row items-start gap-5 items-top mb-5">
-                            <div className="md:p-4 p-3 bg-primary-content text-primary rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="md:size-5 size-4"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                                    />
-                                </svg>
-                            </div>
+                        <ul className="mb-8 list-disc pl-8 text-left">
+                            <li className="max-w-xl">
+                                <div className="mb-8">
+                                    <h3 className="text-primary font-semibold mb-2">
+                                        Diabetes Tipe 1
+                                    </h3>
 
-                            <div>
-                                <h3 className="text-primary font-semibold mb-2">
-                                    Diabetes Tipe 1
-                                </h3>
+                                    <p>
+                                        Diabetes tipe 1 umumnya disebabkan oleh
+                                        gangguan autoimun yang merusak sel beta
+                                        pankreas, sehingga tubuh tidak mampu
+                                        memproduksi insulin.
+                                    </p>
+                                </div>
+                            </li>
 
-                                <p>
-                                    Diabetes tipe 1 umumnya disebabkan oleh
-                                    gangguan autoimun yang merusak sel beta
-                                    pankreas, sehingga tubuh tidak mampu
-                                    memproduksi insulin.
-                                </p>
-                            </div>
-                        </div>
+                            <li className="max-w-xl">
+                                <div className="mb-8">
+                                    <h3 className="text-primary font-semibold mb-2">
+                                        Diabetes Tipe 2
+                                    </h3>
 
-                        <div className="flex flex-row items-start gap-5 items-top mb-5">
-                            <div className="md:p-4 p-3 bg-primary-content text-primary rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="md:size-5 size-4"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                                    />
-                                </svg>
-                            </div>
+                                    <p>
+                                        Diabetes tipe 2, yang lebih umum
+                                        terjadi, disebabkan oleh resistensi
+                                        insulin atau penurunan produksi insulin,
+                                        sering kali akibat pola hidup tidak
+                                        sehat.
+                                    </p>
+                                </div>
+                            </li>
 
-                            <div>
-                                <h3 className="text-primary font-semibold mb-2">
-                                    Diabetes Tipe 2
-                                </h3>
+                            <li className="max-w-xl">
+                                <div className="mb-8">
+                                    <h3 className="text-primary font-semibold mb-2">
+                                        Diabetes Gestasional
+                                    </h3>
 
-                                <p>
-                                    Diabetes tipe 2, yang lebih umum terjadi,
-                                    disebabkan oleh resistensi insulin atau
-                                    penurunan produksi insulin, sering kali
-                                    akibat pola hidup tidak sehat.
-                                </p>
-                            </div>
-                        </div>
+                                    <p>
+                                        Diabetes gestasional terjadi selama
+                                        kehamilan dan meningkatkan risiko
+                                        diabetes tipe 2 di masa mendatang.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <div className="flex flex-row items-start gap-5 items-top mb-5">
-                            <div className="md:p-4 p-3 bg-primary-content text-primary rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="md:size-5 size-4"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                                    />
-                                </svg>
-                            </div>
+                            <li className="max-w-xl">
+                                <div className="mb-8">
+                                    <h3 className="text-primary font-semibold mb-2">
+                                        Diabetes Sekunder
+                                    </h3>
 
-                            <div>
-                                <h3 className="text-primary font-semibold mb-2">
-                                    Diabetes Gestasional
-                                </h3>
-
-                                <p>
-                                    Diabetes gestasional terjadi selama
-                                    kehamilan dan meningkatkan risiko diabetes
-                                    tipe 2 di masa mendatang.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-row items-start gap-5 items-top mb-5">
-                            <div className="md:p-4 p-3 bg-primary-content text-primary rounded-full">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    class="md:size-5 size-4"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                                    />
-                                </svg>
-                            </div>
-
-                            <div>
-                                <h3 className="text-primary font-semibold mb-2">
-                                    Diabetes Sekunder
-                                </h3>
-
-                                <p>
-                                    Diabetes sekunder disebabkan oleh penyakit
-                                    lain atau penggunaan obat tertentu yang
-                                    memengaruhi fungsi pankreas.
-                                </p>
-                            </div>
-                        </div>
+                                    <p>
+                                        Diabetes sekunder disebabkan oleh
+                                        penyakit lain atau penggunaan obat
+                                        tertentu yang memengaruhi fungsi
+                                        pankreas.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>

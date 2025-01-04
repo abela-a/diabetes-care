@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Logo from "./logo";
 
 export default function Navbar() {
     const router = useRouter();
@@ -51,7 +52,7 @@ export default function Navbar() {
                             <li
                                 key={index}
                                 className={
-                                    nav.title === "Beranda"
+                                    nav.href === router.pathname
                                         ? "font-bold text-primary"
                                         : ""
                                 }
@@ -62,12 +63,7 @@ export default function Navbar() {
                     </ul>
                 </div>
 
-                <a className="btn btn-ghost text-xl">
-                    <b>
-                        <span className="text-primary">Diabetes</span>
-                        <span className="text-secondary">Care</span>
-                    </b>
-                </a>
+                <Logo />
             </div>
 
             <div className="navbar-center hidden lg:flex">
@@ -76,7 +72,7 @@ export default function Navbar() {
                         <li
                             key={index}
                             className={
-                                nav.title === "Beranda"
+                                nav.href === router.pathname
                                     ? "font-bold text-primary"
                                     : ""
                             }
@@ -87,9 +83,7 @@ export default function Navbar() {
                 </ul>
             </div>
 
-            <div className="navbar-end">
-                <a className="btn btn-primary btn-sm">Cek Risiko</a>
-            </div>
+            <div className="navbar-end"></div>
         </div>
     );
 }
