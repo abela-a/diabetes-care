@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layouts";
 
-export default function skrining() {
+export default function Skrining() {
     return (
         <Layout>
             <Head>
