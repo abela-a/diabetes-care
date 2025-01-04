@@ -15,7 +15,7 @@ export default function Home() {
             </Head>
 
             <section
-                className="hero min-h-screen lg:min-h-[50vh] bg-cover bg-center"
+                className="hero min-h-screen lg:min-h-[65vh] bg-cover bg-center"
                 style={{
                     backgroundImage:
                         "url(https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
@@ -24,15 +24,18 @@ export default function Home() {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-3xl font-bold">
+                        <h1 className="mb-5 text-3xl font-bold text-white">
                             Kebiasaan Sehat Baru, untuk Kualitas Hidup Lebih
                             Baik
                         </h1>
                         <p className="mb-5">
-                            Know your risk, know your response. Diabetes Care.
+                            Know your risk, know your response.
                         </p>
 
-                        <Link className="btn btn-primary" href="/skrining">
+                        <Link
+                            className="btn bg-emerald-500 text-white hover:bg-emerald-600"
+                            href="/skrining"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
