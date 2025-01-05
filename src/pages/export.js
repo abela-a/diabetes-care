@@ -29,6 +29,32 @@ export default function Export() {
         fetchData();
     }, []);
 
+    const calculateRisk = (response) => {
+        let risk = 0;
+        let result = "";
+
+        if (response.question_1) risk += 1;
+        if (response.question_2) risk += 1;
+        if (response.question_3) risk += 1;
+        if (response.question_4) risk += 1;
+        if (response.question_5) risk += 1;
+        if (response.question_6) risk += 1;
+        if (response.question_7) risk += 1;
+        if (response.question_8) risk += 1;
+        if (response.question_9) risk += 1;
+        if (response.question_10) risk += 1;
+
+        if (risk <= 3) {
+            result = "Rendah";
+        } else if (risk >= 4 && risk <= 6) {
+            result = "Sedang";
+        } else {
+            result = "Tinggi";
+        }
+
+        return result;
+    };
+
     const onGetExporResponse = async (title, worksheetname) => {
         try {
             const now = new Date().toISOString().split("T")[0];
@@ -55,6 +81,7 @@ export default function Export() {
                     "Pertanyaan 8": pro.question_8 ? "✅" : "❌",
                     "Pertanyaan 9": pro.question_9 ? "✅" : "❌",
                     "Pertanyaan 10": pro.question_10 ? "✅" : "❌",
+                    Resiko: calculateRisk(pro),
                 }));
 
                 const workbook = XLSX.utils.book_new();
@@ -125,7 +152,7 @@ export default function Export() {
                     </div>
 
                     <div className="card bg-white shadow-lg">
-                        <div className="card-body">
+                        <div className="card-body max-h-[90vh]">
                             <div className="overflow-x-auto h-full">
                                 <table className="table table-md table-pin-rows">
                                     <thead className="bg-slate-100 text-center">
@@ -145,6 +172,7 @@ export default function Export() {
                                             <th>8</th>
                                             <th>9</th>
                                             <th>10</th>
+                                            <th>Resiko</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -214,6 +242,9 @@ export default function Export() {
                                                     {response.question_10
                                                         ? "✅"
                                                         : "❌"}
+                                                </td>
+                                                <td>
+                                                    {calculateRisk(response)}
                                                 </td>
                                             </tr>
                                         ))}
