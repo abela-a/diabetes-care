@@ -13,6 +13,7 @@ export default function Skrining() {
         age: "",
         height: "",
         weight: "",
+
         question_1: "",
         question_2: "",
         question_3: "",
@@ -71,8 +72,6 @@ export default function Skrining() {
 
             if (error) {
                 console.error("Error inserting data:", error);
-            } else {
-                console.log("Data inserted successfully:", data);
             }
         } catch (err) {
             console.error("Unexpected error:", err);
@@ -109,7 +108,7 @@ export default function Skrining() {
                                 Identitas Diri
                             </h3>
 
-                            <div className="mb-10 border p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control">
                                     <div className="label">
                                         <span className="label-text">Nama</span>
@@ -209,7 +208,7 @@ export default function Skrining() {
                                     </label>
                                 </label>
 
-                                <label className="form-control mb-3">
+                                <label className="form-control mb-3 hidden">
                                     <div className="label">
                                         <span className="label-text">
                                             Tinggi Badan
@@ -223,7 +222,6 @@ export default function Skrining() {
                                             placeholder="Masukkan tinggi badan..."
                                             min={100}
                                             max={200}
-                                            required
                                             name="height"
                                             onChange={(e) =>
                                                 setForm({
@@ -268,7 +266,7 @@ export default function Skrining() {
                                 Skrining
                             </h3>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -325,7 +323,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -381,7 +379,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -437,7 +435,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -494,7 +492,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -550,7 +548,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -607,7 +605,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -662,12 +660,12 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
                                             Apakah Anda sering ngemil di luar
-                                            waktu makan utama,terutama makanan
+                                            waktu makan utama, terutama makanan
                                             manis?
                                         </span>
                                     </div>
@@ -718,7 +716,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -773,7 +771,7 @@ export default function Skrining() {
                                 </label>
                             </div>
 
-                            <div className="mb-10 border w-full p-5 rounded-lg bg-slate-50">
+                            <div className="mb-10 w-full p-5 rounded-lg bg-white shadow-lg">
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
@@ -832,7 +830,7 @@ export default function Skrining() {
                             </div>
 
                             <div className="mb-10 text-center">
-                                <button className="btn bg-emerald-500 text-white hover:bg-emerald-600 w-full max-w-xs">
+                                <button className="btn bg-emerald-500 text-white hover:bg-emerald-600 w-full max-w-xs border-emerald-500 shadow-lg hover:border-emerald-700">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"

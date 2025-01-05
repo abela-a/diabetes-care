@@ -32,31 +32,37 @@ export default function Hasil() {
                             }`}
                         >
                             <h2 className="text-2xl font-bold mb-5 text-center">
-                                Risiko Diabetes Anda,{" "}
-                                <span
-                                    className={`text-red-500 ${
-                                        risk === "high" ? "inline" : "hidden"
+                                Risiko Diabetes Anda <br />
+                                <div
+                                    className={`bg-red-500 py-3 px-6 mt-3 rounded-lg text-white ${
+                                        risk === "high"
+                                            ? "inline-block"
+                                            : "hidden"
                                     }`}
                                     id="high-risk-label"
                                 >
                                     Tinggi
-                                </span>
-                                <span
-                                    className={`text-yellow-500 ${
-                                        risk === "medium" ? "inline" : "hidden"
+                                </div>
+                                <div
+                                    className={`bg-yellow-500 py-3 px-6 mt-3 rounded-lg text-white ${
+                                        risk === "medium"
+                                            ? "inline-block"
+                                            : "hidden"
                                     }`}
                                     id="medium-risk-label"
                                 >
                                     Sedang
-                                </span>
-                                <span
-                                    className={`text-emerald-500 ${
-                                        risk === "low" ? "inline" : "hidden"
+                                </div>
+                                <div
+                                    className={`bg-emerald-500 py-3 px-6 mt-3 rounded-lg text-white ${
+                                        risk === "low"
+                                            ? "inline-block"
+                                            : "hidden"
                                     }`}
                                     id="low-risk-label"
                                 >
                                     Rendah
-                                </span>
+                                </div>
                             </h2>
 
                             <p className="mb-5">
@@ -72,7 +78,7 @@ export default function Hasil() {
                             </p>
 
                             <div
-                                className={`card bg-slate-100 border border-red-500 ${
+                                className={`card bg-white shadow-lg ${
                                     risk === "high" ? "block" : "hidden"
                                 }`}
                                 id="high-risk-card"
@@ -148,7 +154,7 @@ export default function Hasil() {
                             </div>
 
                             <div
-                                className={`card bg-slate-100 border border-yellow-500 ${
+                                className={`card bg-white shadow-lg ${
                                     risk === "medium" ? "block" : "hidden"
                                 }`}
                                 id="medium-risk-card"
@@ -217,7 +223,7 @@ export default function Hasil() {
                             </div>
 
                             <div
-                                className={`card bg-slate-100 border border-emerald-500 ${
+                                className={`card bg-white shadow-lg ${
                                     risk === "low" ? "block" : "hidden"
                                 }`}
                                 id="low-risk-card"
@@ -283,7 +289,7 @@ export default function Hasil() {
                                 <button
                                     type="button"
                                     onClick={checkRisk}
-                                    className="btn btn-primary w-full max-w-xs"
+                                    className="btn btn-primary w-full max-w-xs shadow-lg"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -330,7 +336,7 @@ export default function Hasil() {
 
                             <div className="my-10 text-center">
                                 <Link
-                                    className="btn bg-emerald-500 text-white hover:bg-emerald-600"
+                                    className="btn bg-emerald-500 text-white hover:bg-emerald-600 w-full max-w-xs border-emerald-500 shadow-lg hover:border-emerald-700"
                                     href="/skrining"
                                 >
                                     <svg

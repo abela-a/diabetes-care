@@ -21,7 +21,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="navbar">
+        <div className="navbar bg-white shadow-lg sticky top-0 z-[1000]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div
