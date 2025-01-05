@@ -11,7 +11,7 @@ export default function Skrining() {
         name: "",
         gender: "",
         age: "",
-        height: "",
+        height: null,
         weight: "",
 
         question_1: "",
