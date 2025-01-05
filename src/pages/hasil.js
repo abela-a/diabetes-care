@@ -315,24 +315,29 @@ export default function Hasil() {
                                 !risk ? "block" : "hidden"
                             }`}
                         >
-                            <h2 className="text-3xl font-bold text-primary mb-5 text-center">
+                            <h2 className="text-3xl font-bold text-primary mb-8 text-center">
                                 Anda belum melakukan skrining risiko diabetes.
                             </h2>
 
-                            <Image
-                                src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Medical Research"
-                                className="w-full rounded-md my-12"
-                                width={1772}
-                                height={1181}
-                            />
+                            <div className="card bg-white shadow-lg">
+                                <div className="card-body">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="Medical Research"
+                                        className="w-full rounded-md mb-5"
+                                        width={1772}
+                                        height={1181}
+                                    />
 
-                            <p className="mb-5">
-                                Silakan lakukan skrining risiko diabetes
-                                terlebih dahulu untuk mengetahui hasilnya.
-                                Kemudian kami akan memberikan saran dan edukasi
-                                sesuai dengan hasil skrining Anda.
-                            </p>
+                                    <p>
+                                        Silakan lakukan skrining risiko diabetes
+                                        terlebih dahulu untuk mengetahui
+                                        hasilnya. Kemudian kami akan memberikan
+                                        saran dan edukasi sesuai dengan hasil
+                                        skrining Anda.
+                                    </p>
+                                </div>
+                            </div>
 
                             <div className="my-10 text-center">
                                 <Link
