@@ -289,10 +289,10 @@ export default function Export() {
                                 <li className="mb-3">
                                     <b>Pertanyaan 4</b> <br />
                                     <p>
-                                        Apakah Anda pernah mengonsumsi minuman
-                                        manis (seperti teh manis, kopi susu,
+                                        Apakah anda pernah mengonsumsi minuman
+                                        manis (seperti teh manis, kopi, susu,
                                         atau soda) lebih dari satu gelas per
-                                        hari?
+                                        hari dalam satu minggu terakhir?
                                     </p>
                                 </li>
 

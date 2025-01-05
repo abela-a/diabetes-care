@@ -439,10 +439,11 @@ export default function Skrining() {
                                 <label className="form-control mb-3">
                                     <div className="label">
                                         <span className="label-text text-lg">
-                                            Apakah Anda pernah mengonsumsi
+                                            Apakah anda pernah mengonsumsi
                                             minuman manis (seperti teh manis,
-                                            kopi susu, atau soda) lebih dari
-                                            satu gelas per hari?
+                                            kopi, susu, atau soda) lebih dari
+                                            satu gelas per hari dalam satu
+                                            minggu terakhir?
                                         </span>
                                     </div>
 
